@@ -2,8 +2,8 @@ from azure.ai.formrecognizer import DocumentAnalysisClient
 from azure.core.credentials import AzureKeyCredential
 
 # Replace with your Form Recognizer endpoint and key
-endpoint = "https://<your-form-recognizer-endpoint>.cognitiveservices.azure.com/"
-key = "<your-form-recognizer-key>"
+endpoint = "https://genius-doc-faq.cognitiveservices.azure.com/"
+key = "2e76b9565584440a8080135953ee981f"
 
 # Initialize DocumentAnalysisClient
 document_analysis_client = DocumentAnalysisClient(endpoint=endpoint, credential=AzureKeyCredential(key))
