@@ -1,0 +1,72 @@
+{
+    "sku": {
+        "name": "Standard_RAGZRS",
+        "tier": "Standard"
+    },
+    "kind": "StorageV2",
+    "id": "/subscriptions/cb18670c-7df1-471a-85ba-6c65cd883848/resourceGroups/rg-groupB/providers/Microsoft.Storage/storageAccounts/cwbfaq",
+    "name": "cwbfaq",
+    "type": "Microsoft.Storage/storageAccounts",
+    "location": "southeastasia",
+    "tags": {},
+    "properties": {
+        "dnsEndpointType": "Standard",
+        "defaultToOAuthAuthentication": false,
+        "publicNetworkAccess": "Enabled",
+        "keyCreationTime": {
+            "key1": "2024-06-15T15:48:39.3419930Z",
+            "key2": "2024-06-15T15:48:39.3419930Z"
+        },
+        "allowCrossTenantReplication": false,
+        "privateEndpointConnections": [],
+        "minimumTlsVersion": "TLS1_2",
+        "allowBlobPublicAccess": false,
+        "allowSharedKeyAccess": true,
+        "largeFileSharesState": "Enabled",
+        "networkAcls": {
+            "bypass": "AzureServices",
+            "virtualNetworkRules": [],
+            "ipRules": [],
+            "defaultAction": "Allow"
+        },
+        "supportsHttpsTrafficOnly": true,
+        "encryption": {
+            "requireInfrastructureEncryption": false,
+            "services": {
+                "file": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-06-15T15:48:39.3575972Z"
+                },
+                "blob": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-06-15T15:48:39.3575972Z"
+                }
+            },
+            "keySource": "Microsoft.Storage"
+        },
+        "accessTier": "Hot",
+        "provisioningState": "Succeeded",
+        "creationTime": "2024-06-15T15:48:39.2325992Z",
+        "primaryEndpoints": {
+            "dfs": "https://cwbfaq.dfs.core.windows.net/",
+            "web": "https://cwbfaq.z23.web.core.windows.net/",
+            "blob": "https://cwbfaq.blob.core.windows.net/",
+            "queue": "https://cwbfaq.queue.core.windows.net/",
+            "table": "https://cwbfaq.table.core.windows.net/",
+            "file": "https://cwbfaq.file.core.windows.net/"
+        },
+        "primaryLocation": "southeastasia",
+        "statusOfPrimary": "available",
+        "secondaryLocation": "eastasia",
+        "statusOfSecondary": "available",
+        "secondaryEndpoints": {
+            "dfs": "https://cwbfaq-secondary.dfs.core.windows.net/",
+            "web": "https://cwbfaq-secondary.z23.web.core.windows.net/",
+            "blob": "https://cwbfaq-secondary.blob.core.windows.net/",
+            "queue": "https://cwbfaq-secondary.queue.core.windows.net/",
+            "table": "https://cwbfaq-secondary.table.core.windows.net/"
+        }
+    }
+}
