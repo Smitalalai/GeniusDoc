@@ -1,17 +1,13 @@
 from azure.ai.formrecognizer import DocumentAnalysisClient
 from azure.core.credentials import AzureKeyCredential
 
-# Replace with your Form Recognizer endpoint and key
 endpoint = "https://genius-doc-faq.cognitiveservices.azure.com/"
 key = "2e76b9565584440a8080135953ee981f"
 
-# Initialize DocumentAnalysisClient
 document_analysis_client = DocumentAnalysisClient(endpoint=endpoint, credential=AzureKeyCredential(key))
 
-# Path to the local PDF file
-pdf_path = "path/to/your/faq.pdf"
+pdf_path = "C:\Users\smita\OneDrive\Desktop\cwb\FAQ\Azure AI Services.pdf"
 
-# Open the PDF file and analyze it
 with open(pdf_path, "rb") as pdf_file:
     poller = document_analysis_client.begin_analyze_document(
         model_id="prebuilt-document",
@@ -25,7 +21,6 @@ for page in result.pages:
     for line in page.lines:
         print(line.content)
 
-# Optionally, save the extracted text to a file
 extracted_text = ""
 for page in result.pages:
     for line in page.lines:
