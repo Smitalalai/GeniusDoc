@@ -1,25 +1,21 @@
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
 import os
 
-connection_string = "DefaultEndpointsProtocol=https;AccountName=Smital Alai;AccountKey=<your_account_key>;EndpointSuffix=core.windows.net"
+connection_string = "DefaultEndpointsProtocol=https;AccountName=cwbfaq;AccountKey=lo0AizbsXbjZWMVj368VWvr+fbCyrmaB9//PkHb3e9Wg4sEF9Co1k8hjeXrpcpKvnyuXKkipi8aH+AStm+SmKQ==;EndpointSuffix=core.windows.net"
 
-# Initialize a BlobServiceClient
 blob_service_client = BlobServiceClient.from_connection_string(connection_string)
 
-# Name of the container
 container_name = "pdf-microsoft-faq"
 
-# Create the container if it doesn't exist
 try:
     container_client = blob_service_client.create_container(container_name)
 except Exception as e:
     print(f"Container already exists. Error: {e}")
 
 # Path to the local PDF file
-local_file_path = "path/to/your/faq.pdf"
-blob_name = os.path.basename(local_file_path)
+local_file_path = ""C:\Users\smita\OneDrive\Desktop\cwb\FAQ\Azure AI Services.pdf""
+blob_name = os. path.basename(local_file_path)
 
-# Create a BlobClient
 blob_client = blob_service_client.get_blob_client(container=container_name, blob=blob_name)
 
 # Upload the file
