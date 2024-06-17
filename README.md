@@ -54,3 +54,24 @@ Before you start, make sure you have:
    ```bash
    git clone https://github.com/yourusername/azure-ai-document-search.git
    cd azure-ai-document-search
+
+#directory-structure
+azure-ai-document-search/
+│
+├── functions/
+│   ├── process_text/
+│   │   ├── __init__.py          # Azure Function to process and summarize text
+│   └── index_data/
+│       ├── __init__.py          # Azure Function to index data into Azure Cognitive Search
+│
+├── webapp/
+│   ├── app.py                   # Flask web application for search interface
+│   ├── requirements.txt         # Dependencies for Flask application
+│
+├── data/
+│   ├── sample-faq.pdf           # Sample Microsoft FAQ PDF document
+│
+├── requirements.txt             # Dependencies for Azure Functions
+├── README.md                    # This readme file
+└── LICENSE                      # License file
+
