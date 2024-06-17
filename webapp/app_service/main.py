@@ -5,14 +5,14 @@ import openai
 
 app = Flask(__name__)
 
-search_service_endpoint = "https://<your-search-service-name>.search.windows.net"
-admin_key = "<your-admin-key>"
-index_name = "faq-index"
+search_service_endpoint = "https://cwbsearch.search.windows.net"
+admin_key = "Gsk9a4McsoNd7UHsGByHtZ5suy25gtuA0ApAWjDqjIAzSeBP7D6C"
+index_name = "cwb-indexer"
 
 search_client = SearchClient(endpoint=search_service_endpoint, index_name=index_name, credential=AzureKeyCredential(admin_key))
 
 def generate_embedding(query):
-    openai.api_key = "<your-openai-api-key>"
+    openai.api_key = "db8c6e468a43462fa4b16dca0b341f40"
     response = openai.Embedding.create(input=query, model="text-embedding-ada-002")
     return response['data'][0]['embedding']
 
