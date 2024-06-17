@@ -4,8 +4,8 @@ from azure.ai.textanalytics import TextAnalyticsClient
 from azure.core.credentials import AzureKeyCredential
 
 def main(inputBlob: func.InputStream, outputBlob: func.Out[func.InputStream]) -> None:
-    endpoint = "https://<your-text-analytics-endpoint>"
-    key = "<your-text-analytics-key>"
+    endpoint = "https://genius-doc-faq.cognitiveservices.azure.com/"
+    key = "2e76b9565584440a8080135953ee981f"
     client = TextAnalyticsClient(endpoint=endpoint, credential=AzureKeyCredential(key))
 
     document = inputBlob.read().decode('utf-8')
