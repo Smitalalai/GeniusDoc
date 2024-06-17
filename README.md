@@ -52,7 +52,7 @@ Before you start, make sure you have:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/azure-ai-document-search.git
+   git clone https://github.com/Smitalalai/GeniusDoc.git
    cd azure-ai-document-search
 
 ##directory-structure
