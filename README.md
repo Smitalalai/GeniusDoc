@@ -55,7 +55,8 @@ Before you start, make sure you have:
    git clone https://github.com/yourusername/azure-ai-document-search.git
    cd azure-ai-document-search
 
-#directory-structure
+##directory-structure
+
 azure-ai-document-search/
 │
 ├── functions/
