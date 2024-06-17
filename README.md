@@ -1,9 +1,5 @@
 #GeniusDoc
 
-Certainly! Below is the complete `README.md` file that you can use for your GitHub repository. The code snippets have been updated to use Azure Web Apps instead of Flask for deployment.
-
----
-
 # Azure AI Document Search and Generative AI POC
 
 This repository contains a Proof of Concept (POC) for building a full-text search and generative AI system over Microsoft FAQ documents using Azure AI services.
